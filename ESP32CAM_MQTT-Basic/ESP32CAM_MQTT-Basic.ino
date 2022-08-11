@@ -18,11 +18,11 @@
 #include <PubSubClient.h> //Biblioteca para conexion MQTT
 
 //Datos de WiFi
-const char* ssid = "TOTALPLAY_49C538";  // Aquí debes poner el nombre de tu red
+const char* ssid = "TOTALPLAY_49C538";  // Aquí debes poner el nomrrrrrrrrrbre de tu red
 const char* password = "T0T42W1WS1";  // Aquí debes poner la contraseña de tu red
 
 //Datos del broker MQTT
-const char* mqtt_server = "192.168.15.33"; // Si estas en una red local, coloca la IP asignada, en caso contrario, coloca la IP publica
+const char* mqtt_server = "192.168.100.97"; // Si estas en una red local, coloca la IP asignada, en caso contrario, coloca la IP publica
 IPAddress server(192,168,15,33);
 
 // Objetos
@@ -98,7 +98,7 @@ void loop() {
     dtostrf(data, 1, 2, dataString);  // Esta es una función nativa de leguaje AVR que convierte un arreglo de caracteres en una variable String
     Serial.print("Contador: "); // Se imprime en monitor solo para poder visualizar que el evento sucede
     Serial.println(dataString);
-    client.publish("codigoIoT/ejemplo/mqttin", dataString); // Esta es la función que envía los datos por MQTT, especifica el tema y el valor
+    client.publish("codigoIoT/ejemplo/mqtt", dataString); // Esta es la función que envía los datos por MQTT, especifica el tema y el valor
   }// fin del if (timeNow - timeLast > wait)
 }// fin del void loop ()
 
