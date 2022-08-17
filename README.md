@@ -55,4 +55,10 @@ Para observar el funcionamiento de este proyecto deberás realizar lo siguiente.
 4.  Visita el dashboard de NodeRed
 ![](https://github.com/codigo-iot/ESP32CAM_MQTT-Basic/raw/main/esp32camMQTTbasic.jpg)Podrás observar una cuenta progresiva, la cual envía el prográma base del ESP32CAM. Puedes controlar el led flash del ESP32CAM con el switch del dashboard.
 
-[Actualizado el 9-ago-2022 por [Raymundo Soto](https://github.com/raymundosoto)]
+Así se ve el monitor serial y la terminal junto con el dashboard que permite apagar y encender el led
+
+![imagen](https://user-images.githubusercontent.com/72757419/185036043-cdb71aba-c4db-43e9-bbb2-d1c2cf31be77.png)
+
+
+
+[Actualizado el 16-ago-2022 por [Raymundo Soto](https://github.com/raymundosoto)]
